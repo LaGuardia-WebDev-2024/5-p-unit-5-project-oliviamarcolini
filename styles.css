@@ -18,6 +18,11 @@
   src: url(https://cdn.glitch.global/734ea171-6f08-4e3d-99cd-234da3ea325d/ELEGANT%20TYPEWRITER%20Light.ttf?v=1732389857946)
 }
 
+@font-face{
+  font-family: scary;
+  src: url(https://cdn.glitch.global/734ea171-6f08-4e3d-99cd-234da3ea325d/Another%20Danger%20-%20Demo.otf?v=1732632364314)
+}
+
 /* Top Cover
  */
 
@@ -232,13 +237,12 @@ h3 {
 .box {
   width: 300px;
   height: 300px;
-  font-size: 35px;
+  font-size: 30px;
   background-color: brown;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: red;
-  text-shadow: 1px 1px 2px black;
+  color: #bd0808;
   cursor: pointer;
   text-align: center;
   padding: 10px;
@@ -248,39 +252,57 @@ h3 {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  font-family: scary;
 }
 
 .state-1 {
   background-image: url(https://cdn.glitch.global/d8f0c79f-b92d-44f2-867f-c412766f2818/IMG_5534.jpg?v=1732397377149);
   background-size: cover;
+  text-shadow: 1px 1px 2px black;
 }
 
 .state-2 {
   background-image: url(https://cdn.glitch.global/d8f0c79f-b92d-44f2-867f-c412766f2818/Screenshot%202024-11-23%20at%204.43.24%20PM.png?v=1732398219032);
   background-size: cover;
+  font-family: elegant;
+  color: white;
+  -webkit-text-stroke: 1px black;
 }
 
 .state-3 {
-  background-image: url(https://st3.depositphotos.com/1001911/13156/v/450/depositphotos_131565252-stock-illustration-taking-oath-emoticon.jpg);
+  background-image: url(https://cdn.glitch.global/734ea171-6f08-4e3d-99cd-234da3ea325d/Screenshot%202024-11-26%20at%2010.00.22%20AM.png?v=1732633228566);
   background-size: cover;
+  font-family: elegant;
+  color: white;
+  -webkit-text-stroke: 1px black;
 }
 
 .state-4 {
-  background-image: url(https://media.istockphoto.com/id/1447349632/vector/nervous-emoticon.jpg?s=612x612&w=0&k=20&c=XJJ6--OPPe9T9MgJB0A-eL_AH31ABNM6wGk5WZ5DJ28=);
+  background-image: url(https://cdn.glitch.global/734ea171-6f08-4e3d-99cd-234da3ea325d/Screenshot%202024-11-26%20at%2010.02.04%20AM.png?v=1732633328538);
   background-size: cover;
+  font-family: elegant;
+  color: white;
+  -webkit-text-stroke: 1px black;
 }
 
 .state-5 {
-  background-image: url(https://cdn.glitch.global/d8f0c79f-b92d-44f2-867f-c412766f2818/Screenshot%202024-11-23%20at%204.38.44%20PM.png?v=1732397931660);
+  background-image: url(https://cdn.glitch.global/734ea171-6f08-4e3d-99cd-234da3ea325d/Screenshot%202024-11-26%20at%2010.03.37%20AM.png?v=1732633420708);
   background-size: cover;
+  font-family: elegant;
+  color: white;
+  -webkit-text-stroke: 1px black;
 }
 
 .state-6 {
-  background-image: url(https://thumbs.dreamstime.com/b/hush-emoticon-15882081.jpg);
+  background-image: url(https://cdn.glitch.global/734ea171-6f08-4e3d-99cd-234da3ea325d/Screenshot%202024-11-26%20at%2010.04.28%20AM.png?v=1732633472688);
   background-size: cover;
+  font-family: elegant;
+  color: white;
+  -webkit-text-stroke: 1px black;
 }
 
 .state-7 {
+  text-shadow: 1px 1px 2px black;
   background-size: cover;
   background-image: url(https://cdn.glitch.global/d8f0c79f-b92d-44f2-867f-c412766f2818/Screenshot%202024-11-23%20at%204.25.58%20PM.png?v=1732397189954);
 }
