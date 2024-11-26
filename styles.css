@@ -1,0 +1,286 @@
+@font-face {
+  font-family: autumn;
+  src: url(https://cdn.glitch.global/734ea171-6f08-4e3d-99cd-234da3ea325d/Aston%20Script%202.ttf?v=1732200382802)
+}
+
+@font-face{
+  font-family: type;
+  src: url(https://cdn.glitch.global/734ea171-6f08-4e3d-99cd-234da3ea325d/rough_typewriter.otf?v=1732245997652)
+}
+
+@font-face{
+  font-family: heading;
+  src: url(https://cdn.glitch.global/734ea171-6f08-4e3d-99cd-234da3ea325d/ZANIE-BROVIA.ttf?v=1732331049476)
+}
+
+@font-face{
+  font-family: elegant;
+  src: url(https://cdn.glitch.global/734ea171-6f08-4e3d-99cd-234da3ea325d/ELEGANT%20TYPEWRITER%20Light.ttf?v=1732389857946)
+}
+
+/* Top Cover
+ */
+
+#title {
+  background-color: transparent;
+  font-size: 85px;
+  font-family: autumn;
+  font-style: bold;
+  color: #bf8c60;
+  margin-top: 2px;
+  margin-bottom: 0;
+}
+
+.content {
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.main-photo {
+  border: 3px solid #755630;
+  padding: 10px;
+  height: 380px;
+  background-color: #f2dabd;
+}
+  
+#info { 
+  height: 380px;
+  width: 550px;
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+#description {
+  font-size: 25px;
+  font-family: type;
+  background-color: #f2dabd;
+  padding: 6px;
+  overflow: auto;
+  box-shadow: 5px 10px 8px black;
+}
+
+body {
+  background-image: url("https://img.freepik.com/premium-photo/night-park-landscape-abstract-view-alley-trees-lights-autumn-blurred-background_548821-48051.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  
+}
+
+h2 {
+  color: #bf8c60;
+  text-shadow: 2px 2px 4px #000000;
+  text-align: center;
+  font-size: 3em;
+  font-family: heading;
+  letter-spacing: 2px;
+  word-spacing: 3px;
+}
+
+hr {
+  height: 8px;
+  width: 280px;
+  margin-top: 0;
+  margin-bottom: 25px;
+  background-color: #bf8c60;
+}
+
+/* Photo Gallery
+ */
+
+.photos {
+  object-fit: cover;
+  border-radius: 15px 15px;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border: 5px solid #f2dabd;
+  border-radius: 15px 15px;
+}
+
+.flip-card-front {
+  background-color: ;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: #f2dabd;
+  font-family: elegant;
+  transform: rotateY(180deg);
+  line-height: 1.6;
+}
+
+#nachos {
+  background-color: #95715a;
+}
+
+#coney-island {
+  background-color: #61262b;
+}
+
+#polaroid {
+  background-color: #6f5e64;
+}
+
+#halloween {
+  background-color: #82897b;
+}
+
+#photo-gallery {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+/* Art Gallery
+ */
+
+#art-gallery {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.painting {
+  height: 350px;
+  border: 2px solid #755630;
+  padding: 7px;
+  background-color: #f2dabd;
+  box-shadow: 5px 10px 8px black;
+}
+
+.art-description {
+  background-color: rgba(242, 218, 189, 0.8);
+  color: #755630;
+  font-family: elegant;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  padding: 6px;
+  border-radius: 15px 15px;
+}
+
+/* About */
+
+.about {
+  background-color: transparent;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  padding: 15px;
+}
+
+.about-box {
+  background-color: rgba(242, 218, 189, 0.8);
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-top: 0;
+  border: 3px solid #755630;
+  border-radius: 15px 30px;
+  font-family: elegant;
+  line-height: 1.6;
+  color: #755630;
+}
+
+#pink {
+  color: #f035a5;
+  font-weight: bold;}
+
+h3 {
+  font-style: italic;
+  color: #755630;
+  font-weight: bold;
+}
+
+/* Secret Box
+ */
+.box {
+  width: 300px;
+  height: 300px;
+  font-size: 35px;
+  background-color: brown;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: red;
+  text-shadow: 1px 1px 2px black;
+  cursor: pointer;
+  text-align: center;
+  padding: 10px;
+  border: 3px solid #755630;
+  border-radius: 25px 25px;
+  margin-bottom: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.state-1 {
+  background-image: url(https://cdn.glitch.global/d8f0c79f-b92d-44f2-867f-c412766f2818/IMG_5534.jpg?v=1732397377149);
+  background-size: cover;
+}
+
+.state-2 {
+  background-image: url(https://cdn.glitch.global/d8f0c79f-b92d-44f2-867f-c412766f2818/Screenshot%202024-11-23%20at%204.43.24%20PM.png?v=1732398219032);
+  background-size: cover;
+}
+
+.state-3 {
+  background-image: url(https://st3.depositphotos.com/1001911/13156/v/450/depositphotos_131565252-stock-illustration-taking-oath-emoticon.jpg);
+  background-size: cover;
+}
+
+.state-4 {
+  background-image: url(https://media.istockphoto.com/id/1447349632/vector/nervous-emoticon.jpg?s=612x612&w=0&k=20&c=XJJ6--OPPe9T9MgJB0A-eL_AH31ABNM6wGk5WZ5DJ28=);
+  background-size: cover;
+}
+
+.state-5 {
+  background-image: url(https://cdn.glitch.global/d8f0c79f-b92d-44f2-867f-c412766f2818/Screenshot%202024-11-23%20at%204.38.44%20PM.png?v=1732397931660);
+  background-size: cover;
+}
+
+.state-6 {
+  background-image: url(https://thumbs.dreamstime.com/b/hush-emoticon-15882081.jpg);
+  background-size: cover;
+}
+
+.state-7 {
+  background-size: cover;
+  background-image: url(https://cdn.glitch.global/d8f0c79f-b92d-44f2-867f-c412766f2818/Screenshot%202024-11-23%20at%204.25.58%20PM.png?v=1732397189954);
+}
