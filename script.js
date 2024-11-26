@@ -33,7 +33,7 @@ function updateState() {
     box.textContent = "Her real SECRET crush is:";
   } else if (clickCount === 6) {
     box.classList.add("state-7");
-    box.textContent = "Jon Bon Jovi!";
+    box.textContent = "Jon Bon Jovi";
   }
 }
 
